@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - glpk
+  - ipopt
   - pip
   - pip:
       - numpy
@@ -12,4 +13,4 @@ dependencies:
       - sympy
       - pandas
       - pyomo
-      - ipopt
+      
