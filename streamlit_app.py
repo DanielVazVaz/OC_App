@@ -71,7 +71,7 @@ if submitted:
     model = TANK.create_model(mode = mode, ne = int(ne), fixed_elements=fix_fe)
     model.i.pprint()
     opt = pyo.SolverFactory(SOLVER_PYOMO)
-    result_obj = opt.solve(model, tee = True, options={'limits/time':3})
+    result_obj = opt.solve(model, tee = True)
     Level_result = read_results(model, "L")
     w_in_result  = read_results(model, "w_in")
     w_result     = read_results(model, "w_out")

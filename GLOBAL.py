@@ -1,1 +1,1 @@
-SOLVER_PYOMO = "scip"
+SOLVER_PYOMO = "ipopt"
